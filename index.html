@@ -1,0 +1,1013 @@
+
+
+<!DOCTYPE html>
+
+<html lang="ko">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>ANGEL MAID CAFE</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Gowun+Batang&family=Noto+Sans+KR:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+
+:root {
+
+  --pink:#dba5b8;
+
+  --dark:#a36d82;
+
+  --cream:#fffdfb;
+
+  --line:#ead9df;
+
+  --text:#69565e;
+
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+
+  margin:0;
+
+  background:var(--cream);
+
+  color:var(--text);
+
+  font-family:'Noto Sans KR',sans-serif;
+
+  font-weight:300;
+
+}
+
+a{text-decoration:none;color:inherit}
+
+header{
+
+  position:sticky;
+
+  top:0;
+
+  z-index:20;
+
+  background:#fffdfbf2;
+
+  border-bottom:1px solid var(--line);
+
+  backdrop-filter:blur(10px);
+
+}
+
+.brand{text-align:center;padding:17px 10px 12px}
+
+.brand h1{
+
+  margin:0;
+
+  color:var(--dark);
+
+  font-family:'Gowun Batang',serif;
+
+  font-size:30px;
+
+  letter-spacing:9px;
+
+  font-weight:400;
+
+}
+
+.brand p{
+
+  margin:4px 0 0;
+
+  font-size:9px;
+
+  letter-spacing:5px;
+
+  color:#b38c9c;
+
+}
+
+nav{
+
+  display:flex;
+
+  justify-content:center;
+
+  gap:clamp(14px,4vw,35px);
+
+  padding:13px 5px;
+
+  border-top:1px solid #f3e9ed;
+
+}
+
+nav a{
+
+  font-size:10px;
+
+  letter-spacing:1.5px;
+
+  color:#947785;
+
+}
+
+nav a:hover{color:#cf89a5}
+
+.hero{
+
+  min-height:520px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  text-align:center;
+
+  padding:55px 20px;
+
+  background:
+
+    radial-gradient(circle at 15% 20%,#fff 0%,transparent 30%),
+
+    radial-gradient(circle at 85% 80%,#efd6e0 0%,transparent 35%),
+
+    linear-gradient(135deg,#f8e9ef,#fff9fb);
+
+  position:relative;
+
+  overflow:hidden;
+
+}
+
+.hero:before{
+
+  content:"✧";
+
+  position:absolute;
+
+  top:35px;
+
+  left:9%;
+
+  font-size:85px;
+
+  color:#d4a2b5;
+
+  opacity:.4;
+
+}
+
+.hero:after{
+
+  content:"♡";
+
+  position:absolute;
+
+  bottom:35px;
+
+  right:10%;
+
+  font-size:70px;
+
+  color:#d4a2b5;
+
+  opacity:.4;
+
+}
+
+.hero-content{max-width:600px}
+
+.eyebrow{
+
+  font-size:10px;
+
+  letter-spacing:4px;
+
+  color:#ad8294;
+
+}
+
+.hero h2{
+
+  margin:20px 0 0;
+
+  font-family:'Gowun Batang',serif;
+
+  color:#a66d84;
+
+  font-size:clamp(48px,10vw,75px);
+
+  letter-spacing:8px;
+
+  font-weight:400;
+
+}
+
+.hero h3{
+
+  margin:0;
+
+  font-size:12px;
+
+  letter-spacing:7px;
+
+  color:#b58a9d;
+
+  font-weight:300;
+
+}
+
+.hero p{
+
+  font-size:12px;
+
+  line-height:2.3;
+
+  margin:25px 0;
+
+  color:#927984;
+
+}
+
+.button{
+
+  display:inline-block;
+
+  padding:13px 30px;
+
+  border:1px solid #cfa2b3;
+
+  color:#a66d84;
+
+  font-size:10px;
+
+  letter-spacing:2px;
+
+  transition:.3s;
+
+}
+
+.button:hover{
+
+  background:#dba5b8;
+
+  color:white;
+
+}
+
+section{
+
+  padding:75px 20px;
+
+  scroll-margin-top:110px;
+
+}
+
+.container{max-width:950px;margin:auto}
+
+.section-title{
+
+  text-align:center;
+
+  margin-bottom:35px;
+
+}
+
+.section-title small{
+
+  font-size:9px;
+
+  letter-spacing:4px;
+
+  color:#c08da2;
+
+}
+
+.section-title h2{
+
+  font-family:'Gowun Batang',serif;
+
+  font-size:29px;
+
+  font-weight:400;
+
+  color:#a66d84;
+
+  letter-spacing:2px;
+
+  margin:12px 0;
+
+}
+
+.section-title p{
+
+  font-size:11px;
+
+  color:#aa929b;
+
+}
+
+.about{background:white}
+
+.about-box{
+
+  padding:38px 20px;
+
+  text-align:center;
+
+  border:1px solid var(--line);
+
+  background:linear-gradient(135deg,#fffafb,#fff3f6);
+
+  font-size:12px;
+
+  line-height:2.3;
+
+}
+
+.about-box strong{color:#b77b94}
+
+.menu-section{background:#fcf3f6}
+
+.menu-grid{
+
+  display:grid;
+
+  grid-template-columns:repeat(3,1fr);
+
+  gap:17px;
+
+}
+
+.menu-card{
+
+  background:white;
+
+  border:1px solid var(--line);
+
+  text-align:center;
+
+  overflow:hidden;
+
+  transition:.25s;
+
+}
+
+.menu-card:hover{transform:translateY(-5px)}
+
+.food-image{
+
+  height:155px;
+
+  display:flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  background:linear-gradient(135deg,#fff0f4,#f6e1e9);
+
+  font-size:55px;
+
+}
+
+.menu-card h3{
+
+  font-size:13px;
+
+  font-weight:400;
+
+  margin:17px 5px 7px;
+
+}
+
+.menu-card p{
+
+  font-size:10px;
+
+  color:#a38c96;
+
+  margin:0 5px;
+
+}
+
+.price{
+
+  font-size:12px;
+
+  color:#ad7089;
+
+  margin:13px 0 18px;
+
+}
+
+.tag{
+
+  display:inline-block;
+
+  padding:4px 10px;
+
+  background:#f7e8ee;
+
+  color:#ad7890;
+
+  font-size:9px;
+
+  letter-spacing:1px;
+
+}
+
+.maid-section{background:#fffafb}
+
+.maid-card{
+
+  max-width:720px;
+
+  margin:auto;
+
+  display:grid;
+
+  grid-template-columns:1fr 1fr;
+
+  border:1px solid var(--line);
+
+  background:white;
+
+  overflow:hidden;
+
+}
+
+.maid-photo{
+
+  min-height:360px;
+
+  background:#f9e8ee;
+
+  overflow:hidden;
+
+}
+
+.maid-photo img{
+
+  width:100%;
+
+  height:100%;
+
+  min-height:360px;
+
+  object-fit:cover;
+
+  object-position:center;
+
+  display:block;
+
+}
+
+.maid-info{
+
+  padding:35px 24px;
+
+  display:flex;
+
+  flex-direction:column;
+
+  justify-content:center;
+
+}
+
+.maid-info h3{
+
+  font-family:'Gowun Batang',serif;
+
+  font-size:28px;
+
+  font-weight:400;
+
+  color:#a66d84;
+
+  margin:15px 0;
+
+}
+
+.maid-info p{
+
+  font-size:11px;
+
+  line-height:2.2;
+
+  color:#947d87;
+
+}
+
+.maid-info .detail{
+
+  border-top:1px solid var(--line);
+
+  margin-top:12px;
+
+  padding-top:12px;
+
+  font-size:10px;
+
+  line-height:2.2;
+
+}
+
+.event-section{
+
+  background:linear-gradient(120deg,#f1dce4,#fff5f8);
+
+}
+
+.event-box{
+
+  max-width:720px;
+
+  margin:auto;
+
+  text-align:center;
+
+  padding:45px 15px;
+
+  border:1px solid #dcbac8;
+
+}
+
+.event-box h2{
+
+  font-family:'Gowun Batang',serif;
+
+  font-weight:400;
+
+  font-size:28px;
+
+  color:#a66d84;
+
+}
+
+.event-box p{
+
+  font-size:11px;
+
+  line-height:2.3;
+
+}
+
+.info-section{background:white}
+
+.info-list{
+
+  max-width:650px;
+
+  margin:auto;
+
+  border-top:1px solid var(--line);
+
+}
+
+.info-row{
+
+  display:flex;
+
+  justify-content:space-between;
+
+  padding:19px 10px;
+
+  border-bottom:1px solid var(--line);
+
+  font-size:11px;
+
+  gap:15px;
+
+}
+
+.info-row strong{
+
+  color:#ad7890;
+
+  font-weight:400;
+
+}
+
+footer{
+
+  text-align:center;
+
+  background:#f4e5eb;
+
+  padding:40px 15px;
+
+  color:#9d7c8b;
+
+  font-size:10px;
+
+  line-height:2.3;
+
+}
+
+footer h2{
+
+  font-family:'Gowun Batang',serif;
+
+  font-weight:400;
+
+  letter-spacing:7px;
+
+  font-size:25px;
+
+  margin:0;
+
+  color:#a66d84;
+
+}
+
+@media(max-width:650px){
+
+  .menu-grid{
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:10px;
+
+  }
+
+  .food-image{
+
+    height:115px;
+
+    font-size:45px;
+
+  }
+
+  .maid-card{grid-template-columns:1fr}
+
+  .maid-photo{min-height:300px}
+
+  .maid-photo img{min-height:300px}
+
+  .maid-info{padding:28px 22px}
+
+  section{padding:55px 15px}
+
+  nav{gap:15px}
+
+  nav a{font-size:9px}
+
+  .hero{min-height:430px}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+  <div class="brand">
+
+    <h1>ANGEL</h1>
+
+    <p>MAID CAFE</p>
+
+  </div>
+
+  <nav>
+
+    <a href="#home">HOME</a>
+
+    <a href="#about">ABOUT</a>
+
+    <a href="#menu">MENU</a>
+
+    <a href="#maid">MAID</a>
+
+    <a href="#event">EVENT</a>
+
+    <a href="#info">INFO</a>
+
+  </nav>
+
+</header>
+
+<main>
+
+  <div class="hero" id="home">
+
+    <div class="hero-content">
+
+      <div class="eyebrow">WELCOME TO OUR LITTLE WORLD</div>
+
+      <h2>ANGEL</h2>
+
+      <h3>MAID CAFE</h3>
+
+      <p>
+
+        あなたの一日に小さな天使を ♡<br>
+
+        당신의 하루에 작은 천사를 선물합니다.<br>
+
+        오늘도 특별한 추억을 만들어 보세요.
+
+      </p>
+
+      <a class="button" href="#about">DISCOVER MORE ♡</a>
+
+    </div>
+
+  </div>
+
+  <section class="about" id="about">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <small>OUR STORY</small>
+
+        <h2>Welcome, Master.</h2>
+
+        <p>엔젤 메이드 카페에 오신 것을 환영합니다.</p>
+
+      </div>
+
+      <div class="about-box">
+
+        <strong>ANGEL MAID CAFE</strong>는<br>
+
+        바쁜 일상 속 작은 휴식과 행복을 전하는 공간입니다.<br>
+
+        사랑스러운 메이드와 달콤한 디저트,<br>
+
+        이곳에서만 만날 수 있는 특별한 시간을 즐겨보세요. ♡
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="menu-section" id="menu">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <small>OUR SPECIAL MENU</small>
+
+        <h2>Menu Collection</h2>
+
+        <p>엔젤에서 준비한 특별한 메뉴</p>
+
+      </div>
+
+      <div class="menu-grid">
+
+        <div class="menu-card">
+
+          <div class="food-image">🍳</div>
+
+          <h3>오므라이스</h3>
+
+          <p>메이드의 케첩 아트 서비스</p>
+
+          <div class="price">17,000원</div>
+
+          <span class="tag">BEST</span>
+
+        </div>
+
+        <div class="menu-card">
+
+          <div class="food-image">🍓</div>
+
+          <h3>딸기 생크림 파르페</h3>
+
+          <p>딸기와 부드러운 생크림</p>
+
+          <div class="price">15,000원</div>
+
+        </div>
+
+        <div class="menu-card">
+
+          <div class="food-image">🍈</div>
+
+          <h3>멜론 소다</h3>
+
+          <p>엔젤의 시그니처 음료</p>
+
+          <div class="price">10,000원</div>
+
+          <span class="tag">SIGNATURE</span>
+
+        </div>
+
+        <div class="menu-card">
+
+          <div class="food-image">🥞</div>
+
+          <h3>딸기 팬케이크</h3>
+
+          <p>폭신한 팬케이크와 과일</p>
+
+          <div class="price">14,000원</div>
+
+        </div>
+
+        <div class="menu-card">
+
+          <div class="food-image">🍰</div>
+
+          <h3>티라미수</h3>
+
+          <p>진하고 부드러운 디저트</p>
+
+          <div class="price">10,000원</div>
+
+        </div>
+
+        <div class="menu-card">
+
+          <div class="food-image">☕</div>
+
+          <h3>카페라떼</h3>
+
+          <p>고소하고 부드러운 라떼</p>
+
+          <div class="price">9,000원</div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="maid-section" id="maid">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <small>OUR LOVELY STAFF</small>
+
+        <h2>Meet Our Maid</h2>
+
+        <p>엔젤의 사랑스러운 메이드를 소개합니다.</p>
+
+      </div>
+
+      <div class="maid-card">
+
+        <div class="maid-photo">
+
+          <img
+
+            src="https://i.postimg.cc/y8qXbjnd/IMG-5113.png"
+
+            alt="마시로 메이드 프로필 사진">
+
+        </div>
+
+        <div class="maid-info">
+
+          <span class="tag">POPULAR MAID No.01</span>
+
+          <h3>마시로 ♡</h3>
+
+          <p>
+
+            ANGEL MAID CAFE의 인기 1위 메이드.<br>
+
+            새하얀 미소와 다정한 말투로<br>
+
+            주인님을 맞이합니다.
+
+          </p>
+
+          <div class="detail">
+
+            NAME : MASHIRO<br>
+
+            AGE : 23<br>
+
+            POSITION : MAIN MAID<br>
+
+            FAVORITE : SWEETS & TEA
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="event-section" id="event">
+
+    <div class="event-box">
+
+      <div class="section-title">
+
+        <small>SPECIAL EVENT</small>
+
+        <h2>Make a Sweet Memory ♡</h2>
+
+      </div>
+
+      <p>
+
+        메이드와 함께하는 특별한 추억.<br>
+
+        폴라로이드 촬영과 다양한 이벤트를 만나보세요.
+
+      </p>
+
+      <span class="tag">ONLY AT ANGEL</span>
+
+    </div>
+
+  </section>
+
+  <section class="info-section" id="info">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <small>INFORMATION</small>
+
+        <h2>Visit Us</h2>
+
+        <p>엔젤 메이드 카페 이용 안내</p>
+
+      </div>
+
+      <div class="info-list">
+
+        <div class="info-row">
+
+          <strong>OPEN</strong><span>12:00 - 21:00</span>
+
+        </div>
+
+        <div class="info-row">
+
+          <strong>HOLIDAY</strong><span>매주 월요일</span>
+
+        </div>
+
+        <div class="info-row">
+
+          <strong>LOCATION</strong><span>서울 도심 번화가</span>
+
+        </div>
+
+        <div class="info-row">
+
+          <strong>CONTACT</strong><span>공식 SNS 문의</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer>
+
+  <h2>ANGEL</h2>
+
+  MAID CAFE ♡<br>
+
+  あなたの一日に小さな天使を<br>
+
+  Thank you for visiting us.<br>
+
+  © ANGEL MAID CAFE
+
+</footer>
+
+</body>
+
+</html>
